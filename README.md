@@ -14,3 +14,9 @@ npm i
 ```sh
 npm install
 ```
+
+## other pulgin
+```
+npm i sass-embedded
+npm i webpack-iconfont-plugin-nodejs // svg自動生成iconfont
+```
