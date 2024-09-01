@@ -1,7 +1,8 @@
 <template>
     <div class="layout">
         <div class="topbar">
-            
+            <router-link :to="url.home.path">Home</router-link>
+            <router-link :to="url.demo.path">Demo</router-link>
         </div>
         <div class="main-content">
             <router-view>
@@ -14,11 +15,17 @@
     </div>
 </template>
 <script setup>
+import url from '@/router/url';
 </script>
 <style lang="scss" scoped>
 .layout {
     height: 100vh;
     position: relative;
+}
+
+.topbar {
+    display: flex;
+    gap: 10px;
 }
 
 .main-content {
