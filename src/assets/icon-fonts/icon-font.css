@@ -1,0 +1,92 @@
+@font-face {
+    font-family: iconfont;
+    src: url("iconfont.woff2?c247e2bd") format("woff2"),
+             url("iconfont.woff?c247e2bd") format("woff"); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+.pw-msk, .pw-msk input[type=text] {
+    font-family: 'iconfont';
+}
+
+.pw-msk::placeholder, .pw-msk input[type=text]::placeholder {
+    font-family: initial;
+}
+
+[class^="icon"]::before, [class*=" icon"]::before {
+    font-family: 'iconfont' !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+}
+
+
+.icon-angle-down::before {
+    content: "\554a";
+}
+
+.icon-angle-left::before {
+    content: "\554b";
+}
+
+.icon-angle-right::before {
+    content: "\554c";
+}
+
+.icon-angle-up::before {
+    content: "\554d";
+}
+
+.icon-calendar-days::before {
+    content: "\554e";
+}
+
+.icon-caret-up::before {
+    content: "\554f";
+}
+
+.icon-circle-alert::before {
+    content: "\5550";
+}
+
+.icon-circle-check::before {
+    content: "\5551";
+}
+
+.icon-circle-user::before {
+    content: "\5552";
+}
+
+.icon-close::before {
+    content: "\5553";
+}
+
+.icon-edit::before {
+    content: "\5554";
+}
+
+.icon-filter::before {
+    content: "\5555";
+}
+
+.icon-logout::before {
+    content: "\5556";
+}
+
+.icon-mask::before {
+    content: "\5557";
+}
+
+.icon-pencil::before {
+    content: "\5558";
+}
+
+.icon-search::before {
+    content: "\5559";
+}
+
+.icon-select::before {
+    content: "\555a";
+}
+
