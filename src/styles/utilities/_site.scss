@@ -1,0 +1,67 @@
+// google 思源黑體
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+body {
+    font-family: 'Noto Sans TC', PingFang TC, PingFang SC, 微軟正黑體, Arial, Microsoft;
+    line-height: 1.5;
+    color: $black;
+}
+
+p,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+h1, .h1{
+    font-size: $font-size-40;
+}
+h2, .h2{
+    font-size: $font-size-32;
+}
+h3, .h3{
+    font-size: $font-size-24;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+    &:hover {
+        color: inherit;
+    }
+}
+
+[v-cloak] {
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: $container;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.loading-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,0.4);
+    z-index: 2;
+}
