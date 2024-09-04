@@ -5,9 +5,10 @@
             <router-link :to="url.demo.path">Demo</router-link>
         </div>
         <div class="main-content">
-            <router-view>
+            <!-- <router-view>
                 <component :is="Component" :key="$route.name"></component>
-            </router-view>
+            </router-view> -->
+            <home></home>
             <div class="footer">
                 Fish 著作權所有 © 2024
             </div>
@@ -15,10 +16,13 @@
     </div>
 </template>
 <script setup>
+import home from '@/views/home/home.vue';
 import url from '@/router/url';
 </script>
 <style lang="scss" scoped>
 .layout {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     position: relative;
 }
@@ -29,7 +33,7 @@ import url from '@/router/url';
 }
 
 .main-content {
-    height: calc(100vh - $topbar-hasPicture-height);
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     .view {
